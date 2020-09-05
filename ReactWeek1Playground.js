@@ -69,3 +69,53 @@ const book3 = new Book(
 console.log(book1);
 console.log(book2);
 console.log(book3);
+
+//challenge 5
+
+class Human {
+  constructor(name, age, height, gender, specialization) {
+    this.name = name;
+    this.age = age;
+    this.height = height;
+    this.gender = gender;
+    this.specialization = specialization;
+  }
+}
+
+class Mage extends Human {
+  constructor(name, age, height, gender, specialization) {
+    super(name, age, height, gender, specialization);
+  }
+  shootAkimbo() {
+    console.log(`${this.name} weilds his akimbos and ends you!\n\n`);
+  }
+}
+
+const mage1 = new Mage("Isaiah", 21, "6ft", "male", "gunplay");
+
+console.log(mage1);
+mage1.shootAkimbo();
+
+//challenge 6
+const students = [
+  {
+    id: 1,
+    name: "Carter",
+    age: 26,
+  },
+  {
+    id: 2,
+    name: "Zay",
+    age: 21,
+  },
+  {
+    id: 3,
+    name: "Jessica",
+    age: 24,
+  },
+];
+
+const newStudents = students.map((item) => ({ id: item.id, age: item.age }));
+console.log(students);
+console.log(newStudents);
+console.table(newStudents);
