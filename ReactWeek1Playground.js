@@ -65,6 +65,7 @@ const book3 = new Book(
   "Digital Audio Production 101 - The Noob Guide",
   "Isaiah Thomas"
 );
+
 console.log(book1);
 console.log(book2);
 console.log(book3);
