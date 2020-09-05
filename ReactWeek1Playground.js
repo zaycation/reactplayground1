@@ -44,7 +44,27 @@ bicycle.goFaster(`Isaiah`);
 
 const hello = (name) => ({ studentName: name });
 
-console.log(hello('Carter'));
-console.log(hello('Isaiah'));
-console.log(hello('James'));
-console.log(hello('Keith'));
+console.log(hello("Carter"));
+console.log(hello("Isaiah"));
+console.log(hello("James"));
+console.log(hello("Keith"));
+
+//challenge 4
+class Book {
+  constructor(title, author, year, isRead = false) {
+    this.title = title;
+    this.author = author;
+    this.year = year;
+    this.isRead = isRead;
+  }
+}
+
+const book1 = new Book("Steppenwolf", "Herman Hesse", 1927, true);
+const book2 = new Book("Dune", "Frank Herbert", 1965);
+const book3 = new Book(
+  "Digital Audio Production 101 - The Noob Guide",
+  "Isaiah Thomas"
+);
+console.log(book1);
+console.log(book2);
+console.log(book3);
