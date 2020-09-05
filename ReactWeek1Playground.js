@@ -13,24 +13,25 @@ console.log(`${person.name} ${person.age}`);
 //adds "last name" section to person object
 person.lastName = "John";
 
-
 person.log();
-
-
 
 //challenge 2
 
 const bicycle = {
   color: "blue",
   electric: false,
-  start() {
-    console.log("You begin to pedal the bike");
-    console.log("Use 'pedalFaster()' to pedal faster!")
+  start(name) {
+    console.log(`${name} begins to pedal the ${this.color} bike`);
+    console.log(`TIP: Use 'pedalFaster()' to pedal faster!\n\n`);
   },
-  pedalFaster() {
-      console.log("You start pedalling faster!")
-  }
+  pedalFaster(name) {
+    console.log(`${name} starts pedalling even faster!`);
+  },
 };
 
-bicycle.start();
-bicycle.pedalFaster();
+bicycle.color = "green";
+bicycle.electric = true;
+
+bicycle.start(`Isaiah`);
+
+bicycle.pedalFaster(`Isaiah`);
