@@ -10,7 +10,7 @@ const person = {
 console.log(`${person.name} ${person.age}`);
 
 //adds "last name" section to person object
-person.lastName = "steinhoff";
+person.lastName = "John";
 
 person.log();
 
