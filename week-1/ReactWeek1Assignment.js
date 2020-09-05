@@ -18,10 +18,10 @@ class Bootcamp {
     );
     if (dupeEmail.length === 0) {
       this.students.push(student);
-      console.log("A student has now been added");
+      console.log(`Registering ${student.email} to the bootcamp ${student.community}.`);
       return;
     } else {
-      console.log("Student you are trying to register already exists");
+      console.log(`A student has already registered with the following email: ${student.email}! Please try again.`);
     }
   }
 }
