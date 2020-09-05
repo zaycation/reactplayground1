@@ -7,7 +7,7 @@ class Student {
 }
 
 class Bootcamp {
-    constructor(name, level, students) {
+    constructor(name, level, students=[]) {
         this.name;
         this.level;
         this.students;

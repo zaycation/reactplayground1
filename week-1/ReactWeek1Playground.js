@@ -87,7 +87,7 @@ class Mage extends Human {
     super(name, age, height, gender, specialization);
   }
   shootAkimbo() {
-    console.log(`${this.name} weilds his akimbos and ends you!\n\n`);
+    console.log(`${this.name} wields his akimbo and ends you!\n\n`);
   }
 }
 
