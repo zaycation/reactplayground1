@@ -32,9 +32,9 @@ const bicycle = {
 bicycle.color = "green";
 bicycle.electric = true;
 bicycle.start = function (name) {
-    console.log(`${name} starts the engine on his ${this.color} e-bike!`);
-    console.log(`TIP: Use 'goFaster()' to rev your engine and go faster!\n\n`);
-}
+  console.log(`${name} starts the engine on his ${this.color} e-bike!`);
+  console.log(`TIP: Use 'goFaster()' to rev your engine and go faster!\n\n`);
+};
 
 bicycle.start(`Isaiah`);
 
@@ -42,8 +42,9 @@ bicycle.goFaster(`Isaiah`);
 
 //challenge 3
 
-function hello(name) {
-    return { studentName: name };
-}
+const hello = (name) => ({ studentName: name });
 
-const hello = name => ({ studentName: name});
+console.log(hello('Carter'));
+console.log(hello('Isaiah'));
+console.log(hello('James'));
+console.log(hello('Keith'));
